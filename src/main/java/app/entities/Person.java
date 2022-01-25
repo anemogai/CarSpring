@@ -25,8 +25,6 @@ public class Person {
                 System.out.println("you've exceeded the speed limit, speed limit is " + maxSpeed);
             }
         }
-
-
     }
     public Person(List<Car> list) {
         this.list = list;

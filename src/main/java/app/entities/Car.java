@@ -1,7 +1,5 @@
 package app.entities;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Car {
 
     private String name;

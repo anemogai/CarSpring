@@ -32,14 +32,6 @@ public class Main {
         person.startTheCar();
         person.pressThePedal(maxSpeed);
 
-
-
-
-
-
-
     }
-
-
 }
 
