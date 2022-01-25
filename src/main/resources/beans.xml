@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="person" class="app.entities.Person">
+    <constructor-arg>
+        <list>
+            <ref bean="car1"/>
+            <ref bean="car2"/>
+        </list>
+    </constructor-arg>
+</bean>
+
+    <bean id="car1" class="app.entities.Car">
+        <property name="name" value="BMW"/>
+        <property name="maxSpeed" value="250"/>
+    </bean>
+    <bean id="car2" class="app.entities.Car">
+        <property name="name" value="Audi"/>
+        <property name="maxSpeed" value="200"/>
+    </bean>
+</beans>
